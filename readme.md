@@ -1,1 +1,1 @@
-[Slides]https://healqq.github.io/lets-talk-about--typescript-types/#1
+[Slides](https://healqq.github.io/lets-talk-about--typescript-types/#1)
