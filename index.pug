@@ -8,48 +8,81 @@ html
   body
     section.slides.layout-regular.template-default
       article
-        h1 H1
-        h2 H2
-      article.image(data-src="assets/memes/philosoraptor.jpg")
-        h1 Background Image
-      article.image.cover(data-src="assets/memes/philosoraptor.jpg")
-        h1 Cover Image
+        h1 Lets talk about
+        h2 Typescript type system
+      //
+        <article class="image" data-src="assets/memes/philosoraptor.jpg">
+        <h1>Background Image</h1>
+        </article>
+        <article class="image cover" data-src="assets/memes/philosoraptor.jpg">
+        <h1>Cover Image</h1>
+        </article>
+        <article>
+        <ul>
+        <li>Inline Image</li>
+        <li><img src="assets/memes/like-a-boss.jpg"></li>
+        </ul>
+        </article>
       article
-        ul
-          li Inline Image
-          li
-            img(src="assets/memes/like-a-boss.jpg")
-      article
-        h2 List
+        h2 TypeScript types
         ul.build
-          li 1.
-          li 2.
-          li 3.
-          li 4.
+          li types
+          li interfaces
+          li namespaces
+          li modules
+          li enums
       article
-        h2 Code
-        pre
-          | const code = 'without line numbers';
-        pre.linenums
-          | const code = 'with line numbers';
+        h1 Types
       article
-        h2 Code with highlights
-        pre.linenums.h1
-          | const line1 = 'normal'
-          | const line2 = 'highlight'
-          | const line3 = 'normal'
-      article.section
-        h1 New Section
+        h1 Object types
+      article
+        h1 Index types
+      article
+        h1 Interface vs type
       article
         ul
           li
-            em Emphasis
+            em Basically the same
+          li Only difference is how name collisions resolved
+          li For interfaces - they are merged, for types - error will be raised
           li
-            i Italic
-          li Inline <em>Emphasis</em> and <i>Italic</i>
-          li
-            a(href="#") Link
+            | For 
+            em ES6
+            |  every file is a module, so you don&apos;t really care
       article
-        video(src="#" loop controls)
+        h1 Window and other global objects
+      article
+        ul
+          li Sometimes you need to declare something on window
+          li As window is declared as an interface in typescript - you can just extend it
+      article
+        h1 Generics(Template types)
+      article
+        h1 Useful standard generics
+      article
+        h2 Useful standard generics
+        ul.build
+          li
+            | Partial&lt;T&gt;
+          li 
+            | Record&lt;K, T&gt;
+          li
+            | Pick&lt;T, K&gt;
+      article
+        h1 Advanced types
+      article
+        h2 Lest build an opposite for Pick
+      article
+        h1 Conclusion
+      article
+        h2 Thanks for coming
+        ul
+          li
+            a(href="https://healqq.github.io/lets-talk-about--typescript-types/#1") Slides
+          li 
+            a(href="#") Medium article 
+            | (soon)
+          li 
+            a(href="https://www.typescriptlang.org/docs/handbook/advanced-types.html") Typescript Advanced types
 
     script(src='assets/scripts/main.js')
